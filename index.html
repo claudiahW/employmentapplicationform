@@ -24,27 +24,45 @@
 
         </tr>
         <tr>
-            <td>Position :</td>  <td> 
+            <td>Position :</td> 
+             <td> 
                 <select name="position">
-                    <option>Accountant</option>
-                    <option>Receptionist</option>
-                    <option>Administrator</option>
-                    <option>Supervisor</option>
+                    <option value="AC">Accountant</option>
+                    <option value="RE">Receptionist</option>
+                    <option value="AD">Administrator</option>
+                    <option value="SU">Supervisor</option><!--the values in this case are the first two letters of the value since php only takes in two values at a time-->
 
                 </select>
             </td>
 
         </tr>
         <tr>
-            <td>Experience Level: </td>  <td> </td>
+            <td>Experience Level: </td> 
+             <td> 
+                    <option value="BE">Beginner</option>
+                    <option value="IN">Intermediary</option>
+                    <option value="EX">Expert</option>
+
+             </td>
 
         </tr>
         <tr>
-            <td> Job type:</td>  <td> </td>
+            <td> Job type:</td> 
+             <td>
+                <input type="checkbox" name="ft">Full-Time
+                <input type="checkbox" name="pt">Part-Time
+                <input type="checkbox" name="ct">Contract
+            </td>
+
 
         </tr>
         <tr>
-            <td> Employment Status:</td>  <td> </td>
+            <td> Employment Status:</td> 
+             <td>
+                <input type="radio" name="estatus">Employed
+                <input type="radio" name="estatus">Unemployed
+                <input type="radio" name="estatus">Student
+             </td>
 
         </tr>
         <tr>
