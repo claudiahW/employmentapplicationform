@@ -39,65 +39,92 @@
                 <input type="text" class="form-control" id="email" placeholder="e.g johndoe@example.com" name="email">
             </div>
             
-
-        </tr>
     </div>
+
         <div class="col">
-            <td>Position :</td> 
-             <td> 
-                <select name="position">
+            <div class=" mt-3 mb-3">
+    
+                <label for="position" class="form-label">Select Position (select one):</label>
+                <select class="form-select" id="position" name="position">
+                   <option></option>
                     <option value="AC">Accountant</option>
                     <option value="RE">Receptionist</option>
                     <option value="AD">Administrator</option>
-                    <option value="SU">Supervisor</option><!--the values in this case are the first two letters of the value since php only takes in two values at a time-->
-
+                    <option value="SU">Supervisor</option>
                 </select>
-            </td>
+        </div>
 
-        </tr>
-        <tr>
-            <td>Experience Level: </td> 
-             <td> 
-                    <select>
+        <div class="mb-3 mt-3">
+            <label for="experience" class="form-label" >Select Experience Level:</label> 
+            <select class="form-select" id="experience" name="experience">
+                <option></option>
                     <option  value="BE">Beginner</option>
                     <option value="IN">Intermediary</option>
                     <option value="EX">Expert</option>
                     </select>
 
-             </td>
-
-        </tr>
-        <tr>
-            <td> Job type:</td> 
-             <td>
-                <input type="checkbox" name="ft">Full-Time
-                <input type="checkbox" name="pt">Part-Time
-                <input type="checkbox" name="ct">Contract
-            </td>
-
-
-        </tr>
-        <tr>
-            <td> Employment Status:</td> 
-             <td>
-                <input type="radio" name="estatus">Employed
-                <input type="radio" name="estatus">Unemployed
-                <input type="radio" name="estatus">Student
-             </td>
-
         </div>
-        <div class="col">
-            <td> Additional Comments:</td>
-              <td>
-                <textarea name="comments" cols="45" rows="5"></textarea> </td>
+
+        <div class="mb-3 mt-3">
+             Job Category: 
+             <br/>
+
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="fulltime" name="category" value="fulltime">
+                <label class="form-check-label" for="fulltime" >Full-Time</label>
+             </div>
+
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="parttime" name="category" value="parttime">
+                <label class="form-check-label" for="parttime" > Part-Time </label>
+             </div>
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="contract" name="category" value="contract" >
+                <label class="form-check-label" for="contract">Contract</label>
+             </div>
+            
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="internship" name="category" value="internship" >
+                <label class="form-check-label" for="internship">Internship</label>
+             </div>
+            
+        </div>
+
+        <div class="mb-3 mt-3">
+            Employment Status: 
+            <br/>
+             
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="employed" name="estatus" value="employed" >
+                <label class="form-check-label" for="contract">Employed</label>
+             </div>
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="unemployed" name="estatus" value="unemployed" >
+                <label class="form-check-label" for="contract">Unemployed</label>
+             </div>
+             <div class="form-check">
+                <input type="radio" class="form-check-input" id="student" name="estatus" value="student" >
+                <label class="form-check-label" for="contract">Student</label>
+             </div>
 
             </div>
         </div>
+
+
+        <div class="col mt-3 ">
+            <td> Additional Comments:</td>
+              <td>
+                <textarea name="comments" cols="45" rows="5"></textarea> </td>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <button type="reset" class="btn btn-primary">Reset</button>
+    
+            </div>
+
             
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-
+        </div>
+            
+            
         </tr>
     </div>
 </form>
